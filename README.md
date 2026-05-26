@@ -68,4 +68,4 @@ taskreport-dart/
 
 - Repositório GitHub: https://github.com/JulianaEiyng/taskreport-dart
 - Vídeo de apresentação: (em breve)
-- Quadro Kanban: (em breve)
+- Quadro Kanban: https://www.notion.so/Kanban-TaskReport-Dart-36c3dc3ac34b80c685dbc8dcb3e5c112?source=copy_link
