@@ -30,3 +30,6 @@
 
 ## Backlog
 - Aplicar tratamento de exceções
+
+## Link do Kanban
+https://www.notion.so/Kanban-TaskReport-Dart-36c3dc3ac34b80c685dbc8dcb3e5c112
