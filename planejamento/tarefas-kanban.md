@@ -1,17 +1,5 @@
 # Kanban - TaskReport Dart
 
-## Backlog
-- Criar repositório no GitHub
-- Criar README.md
-- Gravar vídeo
-- Enviar links no AVA
-
-## A Fazer
-- Aplicar tratamento de exceções
-
-## Em Andamento
-- Criar repositório no GitHub
-
 ## Concluído
 - Criar arquivo main.dart
 - Criar classe ItemTrabalho
@@ -30,3 +18,15 @@
 - Gerar relatório final
 - Aplicar herança e @override
 - Aplicar encapsulamento
+- Criar README.md
+- Criar repositório no GitHub
+
+## Em andamento
+- Criar Kanban no Notion
+
+## A fazer
+- Gravar vídeo
+- Enviar links no AVA
+
+## Backlog
+- Aplicar tratamento de exceções
