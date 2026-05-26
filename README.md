@@ -62,10 +62,10 @@ taskreport-dart/
 - Dart (puro)
 - VS Code
 - GitHub + GitFlow
-- Kanban (Trello / GitHub Projects)
+- Kanban (Notion)
 
 ## Links
 
-- Repositório GitHub: ((https://github.com/JulianaEiyng))
-- Vídeo de apresentação: (adicione o link aqui)
-- Quadro Kanban: (adicione o link aqui)
+- Repositório GitHub: https://github.com/JulianaEiyng/taskreport-dart
+- Vídeo de apresentação: (em breve)
+- Quadro Kanban: https://www.notion.so/Kanban-TaskReport-Dart-36c3dc3ac34b80c685dbc8dcb3e5c112?source=copy_link

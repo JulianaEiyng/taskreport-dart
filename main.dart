@@ -1,12 +1,12 @@
 // ============================================================
-// TaskReport Dart - Meu Mini-Projeto Avaliativo do SENAI 
-// Modulo 01 - Semana 07
+// Meu mini projeto do SENAI - Semana 07
+// Juliana Eiyng
 // ============================================================
 
 // ============================================================
-// Aqui estao os dados das tarefas simulando uma API
-// Cada mapa tem uma chave e um valor, alguns com erros de propósito
-// como campos vazios, nulos e valores em texto
+// Dados das tarefas simulando o que viria de uma API
+// List<Map<String, dynamic>> = lista de mapas com chave e valor
+// Alguns dados estao errados de proposito, como nulos, espaços e textos
 // ============================================================
 final List<Map<String, dynamic>> dadosTarefas = [
   {
@@ -21,7 +21,7 @@ final List<Map<String, dynamic>> dadosTarefas = [
   {
     'id': 2,
     'titulo': 'Criar tela de perfil',
-    'responsavel': ' kelvin',
+    'responsavel': ' kelvin ',
     'status': 'em andamento',
     'prioridade': 'media',
     'valor': r'R$ 250,50',
@@ -48,7 +48,7 @@ final List<Map<String, dynamic>> dadosTarefas = [
   {
     'id': 5,
     'titulo': 'Revisar regras de negócio',
-    'responsavel': 'Daivd',
+    'responsavel': 'Daivid',
     'status': 'cancelada',
     'prioridade': 'media',
     'valor': r'R$ 0,00',
@@ -57,7 +57,7 @@ final List<Map<String, dynamic>> dadosTarefas = [
   {
     'id': 6,
     'titulo': 'Implementar validação de dados',
-    'responsavel': 'fatima',
+    'responsavel': 'Fátima',
     'status': 'concluida',
     'prioridade': 'alta',
     'valor': r'R$ 200,00',
@@ -77,7 +77,7 @@ final List<Map<String, dynamic>> dadosTarefas = [
 // ============================================================
 // Classe principal com os dados basicos
 // Contém os atributos comuns: id e titulo
-// O metodo exibirResumo() vai ser reescrito pela classe filha
+// O método exibirResumo() será sobrescrito pela classe filha
 // ============================================================
 class ItemTrabalho {
   int id;
@@ -97,7 +97,7 @@ class ItemTrabalho {
 
 // ============================================================
 // CLASSE FILHA - Tarefa (herda de ItemTrabalho com "extends")
-//  Aqui ficam os outros dados da tarefa como status e valor
+// Adiciona os campos específicos de uma tarefa
 // ============================================================
 class Tarefa extends ItemTrabalho {
   String responsavel;
