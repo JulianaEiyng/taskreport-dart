@@ -1,18 +1,18 @@
 // ============================================================
-// TASKREPORT DART - Simulador de Tratamento de Dados de Tarefas
-// Desenvolvido para o Mini-Projeto Avaliativo - SENAI M1S7
+// Meu mini projeto do SENAI - Semana 07
+// Juliana Eiyng
 // ============================================================
 
 // ============================================================
-// DADOS SIMULADOS - simula o retorno de uma API
+// Dados das tarefas simulando o que viria de uma API
 // List<Map<String, dynamic>> = lista de mapas com chave e valor
-// Alguns dados têm problemas propositais: nulos, espaços, textos
+// Alguns dados estao errados de proposito, como nulos, espaços e textos
 // ============================================================
 final List<Map<String, dynamic>> dadosTarefas = [
   {
     'id': 1,
     'titulo': ' Corrigir bug login ',
-    'responsavel': 'Ana',
+    'responsavel': 'juliana',
     'status': 'concluida',
     'prioridade': 'alta',
     'valor': r'R$ 120,00',
@@ -21,7 +21,7 @@ final List<Map<String, dynamic>> dadosTarefas = [
   {
     'id': 2,
     'titulo': 'Criar tela de perfil',
-    'responsavel': ' Bruno ',
+    'responsavel': ' kelvin ',
     'status': 'em andamento',
     'prioridade': 'media',
     'valor': r'R$ 250,50',
@@ -30,7 +30,7 @@ final List<Map<String, dynamic>> dadosTarefas = [
   {
     'id': 3,
     'titulo': null, // titulo nulo - dado incompleto
-    'responsavel': 'Carla',
+    'responsavel': 'Carol',
     'status': 'pendente',
     'prioridade': 'baixa',
     'valor': r'R$ 80,00',
@@ -48,7 +48,7 @@ final List<Map<String, dynamic>> dadosTarefas = [
   {
     'id': 5,
     'titulo': 'Revisar regras de negócio',
-    'responsavel': 'Daniel',
+    'responsavel': 'Daivid',
     'status': 'cancelada',
     'prioridade': 'media',
     'valor': r'R$ 0,00',
@@ -57,7 +57,7 @@ final List<Map<String, dynamic>> dadosTarefas = [
   {
     'id': 6,
     'titulo': 'Implementar validação de dados',
-    'responsavel': 'Eduarda',
+    'responsavel': 'Fátima',
     'status': 'concluida',
     'prioridade': 'alta',
     'valor': r'R$ 200,00',
@@ -75,7 +75,7 @@ final List<Map<String, dynamic>> dadosTarefas = [
 ];
 
 // ============================================================
-// CLASSE BASE - ItemTrabalho
+// Classe principal com os dados basicos
 // Contém os atributos comuns: id e titulo
 // O método exibirResumo() será sobrescrito pela classe filha
 // ============================================================
@@ -89,7 +89,7 @@ class ItemTrabalho {
     required this.titulo,
   });
 
-  // Método que será sobrescrito pela classe filha (polimorfismo)
+  // Método que será reescrito pela classe filha (polimorfismo)
   void exibirResumo() {
     print('Item $id - $titulo');
   }
@@ -126,9 +126,9 @@ class Tarefa extends ItemTrabalho {
 }
 
 // ============================================================
-// CLASSE RelatorioTarefas - com ENCAPSULAMENTO
+// Classe que gera o relatorio das tarefas
 // O atributo _tarefas é privado (começa com _)
-// Os dados são acessados apenas pelos getters
+// Para pegar os dados uso os getters
 // ============================================================
 class RelatorioTarefas {
   // Atributo privado - não pode ser acessado diretamente de fora
